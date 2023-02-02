@@ -51,8 +51,7 @@
             </li>
         </ul>
 
-        <div class="quiz"> quiz area to set a backgroound photo
-            <a href="quiz.html">file upload test</a>
+        <div class="quiz"> 
 
             <form id="xQuiz" class="x-form" method="POST" action="https://formdump.codeinstitute.net/">
 
@@ -133,7 +132,25 @@
 
 
 
-        <div id="app"></div>
+        <div class="timer" id="app"></div>
+
+
+        <div class="record">
+            <table id="countdown">
+                <tr id="countdown-timer">
+                    <td><span id="days">x</span></td>
+                    <td><span id="hours">x</span></td>
+                    <td><span id="minutes">x</span></td>
+                    <td><span id="seconds">x</span></td>
+                </tr>
+                <tr id="countdown-labels">
+                    <td><span>Days</span></td>
+                    <td><span>Hours</span></td>
+                    <td><span>Minutes</span></td>
+                    <td><span>Seconds</span></td>
+                </tr>
+            </table>
+        </div>
 
 
 
@@ -143,13 +160,11 @@
 
 
         <div class="score">
+            <br>
             <p class="scores">Correct Answers <span id="scorePlus">0</span></p>
+            <br>
             <p class="scores">Incorrect Answers <span id="scoreMinus">0</span></p>
-            <div>
-                <br>
-                <a href="result.html" class="active" target="_blank">SHOW RESULT</a>
-                <br>
-            </div>
+            <br>
         </div>
 
 
@@ -167,7 +182,7 @@
     <!--Script of FONTAESOME for the used icons-->
     <script src="https://kit.fontawesome.com/f24292f78f.js" crossorigin="anonymous"></script>
 
-   
+
 
 
     <script src="assets/js/quiz.js"></script>

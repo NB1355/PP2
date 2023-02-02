@@ -44,9 +44,10 @@ hr {
     "header"
     "social"
     "timer"
+    "record"
     "quiz"
     "score"
-    "upload"
+    "setup"
     "footer";
 }
 
@@ -79,22 +80,30 @@ header {
   grid-area: quiz;
 
 
-  /* background: url("../images/background.jpg") no-repeat center center; */
-  /* background-size: cover; */
+  background: url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
   /* background-attachment: fixed; */
 }
 
 .setup {
-  grid-area: upload;
+  grid-area: setup;
   background-color: yellow;
 
 }
 
 .timer {
   grid-area: timer;
-  background-color: beige;
+  background-color: bisque;
 
 }
+
+.record {
+  grid-area: record;
+  background-color: gray;
+
+}
+
+
 
 .score {
   grid-area: score;
@@ -120,7 +129,8 @@ footer {
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
       "header social"
-      "quiz upload"
+      "quiz setup"
+      "quiz record"
       "quiz timer"
       "quiz score"
       "footer footer";
