@@ -51,12 +51,14 @@ function questionsLoad() {
             getMode();
 
             questionShow();
+            
 
             console.log(" test mode:" + testMode) + "/n";
             if (testMode == true) {
                 document.getElementById("x1-button").disabled = true;
                 document.getElementById("x2-button").disabled = false;
                 document.getElementById("x3-button").disabled = true;
+                startTimer();
 
             } else {
                 document.getElementById("x1-button").disabled = true;
@@ -87,6 +89,7 @@ function randomSelect(data) {
 
 function questionShow() {
 
+
     if (s < select.length) {
 
         let q = select[s] - 1;
@@ -104,6 +107,12 @@ function questionShow() {
         document.getElementById("x2-button").disabled = true;
         document.getElementById("x3-button").disabled = true;
         document.getElementById("x4-button").disabled = false;
+
+    }
+
+    if (    testMode == true) {
+
+        startTimer(); 
 
     }
 }
@@ -167,6 +176,9 @@ function questionSubmit() {
 
     optionsClear();
     questionShow();
+   
+    timePassed = -1 ;
+    clearInterval(timerInterval);
 }
 
 function showResult() {

@@ -1,5 +1,7 @@
 // Credit: Mateusz Rybczonec
 
+
+
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 10;
 const ALERT_THRESHOLD = 5;
@@ -18,7 +20,9 @@ const COLOR_CODES = {
   }
 };
 
-const TIME_LIMIT = 20;
+const TIME_LIMIT = 5;
+
+
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
@@ -43,18 +47,28 @@ document.getElementById("app").innerHTML = `
     </g>
   </svg>
   <span id="base-timer-label" class="base-timer__label">${formatTime(
-    timeLeft
-  )}</span>
+  timeLeft
+)}</span>
 </div>
 `;
 
-startTimer();
+
 
 function onTimesUp() {
+
   clearInterval(timerInterval);
+
+  questionSubmit();
+
+
+
+
 }
 
 function startTimer() {
+
+if (testMode == true ) {
+
   timerInterval = setInterval(() => {
     timePassed = timePassed += 1;
     timeLeft = TIME_LIMIT - timePassed;
@@ -68,6 +82,27 @@ function startTimer() {
       onTimesUp();
     }
   }, 1000);
+  
+}
+
+// learn mode
+else {
+
+  TIME_LIMIT=0;
+  timerInterval = setInterval(() => {
+    timePassed = timePassed += 1;
+    timeLeft = timePassed;
+    document.getElementById("base-timer-label").innerHTML = formatTime(
+      timeLeft
+    );
+    setCircleDasharray();
+    setRemainingPathColor(timeLeft);
+
+    if (timeLeft === 0) {
+      onTimesUp();
+    }
+  }, 1000);
+}
 }
 
 function formatTime(time) {
