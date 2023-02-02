@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+body {
+  font-family: Lato, sans-serif;
+  color:#0c162c;
+  }
+
+h1 {
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #0c162c;
+}
+
+h2,
+h3 {
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #d6d8db;
+
+}
+
+hr {
+  border-top: 1px solid #fff;
+  margin-top: 2px;
+  width: 90%;
+}
+
+/*---------------------------Grid Structure--------*/
+.grid-wrap {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "header"
+    "social"
+    "timer"
+    "quiz"
+    "score"
+    "upload"
+    "footer";
+}
+
+header {
+  background-color: orange;
+  grid-area: header;
+
+}
+
+.social {
+  text-align: center;
+  background-color: aqua;
+  grid-area: social ;
+}
+
+.social li {
+  display: inline-block;
+  padding: 10px;
+ }
+
+.social i {
+   color:#0c162c;
+   font-size: 120%;
+}
+
+/*---------------------------Content----------------*/
+
+.quiz {
+  background-color: royalblue;
+  grid-area: quiz;
+
+
+  /* background: url("../images/background.jpg") no-repeat center center; */
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+}
+
+.upload {
+  grid-area: upload;
+  background-color: yellow;
+ 
+}
+
+.timer {
+  grid-area: timer;
+  background-color: orange;
+
+}
+.score {
+  grid-area: score;
+  background-color: greenyellow;
+}
+
+/*--------------------Quiz Process Relevant-----------------*/
+.answers{
+  /* display: none; */
+  backdrop-filter: sepia(90%);
+  opacity: 0.33;
+}
+
+.x-button {
+  display: none;
+}
+
+
+
+
+/*---------------------------Footer-----------------*/
+
+footer {
+  grid-area: footer;
+  background-color: green;
+  font-size: small;
+
+}
+
+/*---------------------------Responsivity------------*/
+
+@media (min-width: 500px) {
+  
+  .grid-wrap {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "header social"
+      "quiz upload"
+      "quiz timer"
+      "quiz score"
+      "footer footer";
+  }
+}

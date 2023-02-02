@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+body {
+  font-family: Lato, sans-serif;
+  color: #0c162c;
+}
+
+h1 {
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #0c162c;
+}
+
+h2,
+h3 {
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #d6d8db;
+
+}
+
+hr {
+  border-top: 1px solid #fff;
+  margin-top: 2px;
+  width: 90%;
+}
+
+/*---------------------------Grid Structure----------------------------*/
+.grid-wrap {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "header"
+    "social"
+    "timer"
+    "quiz"
+    "score"
+    "upload"
+    "footer";
+}
+
+header {
+  background-color: orange;
+  grid-area: header;
+
+}
+
+.social {
+  text-align: center;
+  background-color: aqua;
+  grid-area: social;
+}
+
+.social li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.social i {
+  color: #0c162c;
+  font-size: 120%;
+}
+
+/*---------------------------Content-----------------------------------*/
+
+.quiz {
+  background-color: royalblue;
+  grid-area: quiz;
+
+
+  /* background: url("../images/background.jpg") no-repeat center center; */
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+}
+
+.setup {
+  grid-area: upload;
+  background-color: yellow;
+
+}
+
+.timer {
+  grid-area: timer;
+  background-color: beige;
+
+}
+
+.score {
+  grid-area: score;
+  background-color: greenyellow;
+}
+
+
+
+/*---------------------------Footer------------==================-----*/
+
+footer {
+  grid-area: footer;
+  background-color: green;
+  font-size: small;
+
+}
+
+/*--------------------------GRid Responsivity--------------------------*/
+
+@media (min-width: 500px) {
+
+  .grid-wrap {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "header social"
+      "quiz upload"
+      "quiz timer"
+      "quiz score"
+      "footer footer";
+  }
+}
+
+
+/*
+/*
+/*
+/*
+
+
+/* >> form.css---------------------------------------------------------*/
+
+.x-form {
+
+  color: #fff;
+  background-color: rgba(60, 60, 60, 0.8);
+  padding: 30px;
+}
+
+.x-radio {
+  display: none;
+}
+
+.x-checkbox {
+  accent-color: #98c004;
+  display: none;
+}
+
+.x-answers {
+ 
+   backdrop-filter: sepia(90%);
+   opacity: 0.01;
+ 
+ }
+ 
+
+#test-type,
+#test-type label {
+  display: inline-block;
+  padding-bottom: 20px;
+  font-size: small;
+  margin-right: 10px;
+
+}
+
+.x-form h2 {
+  color: #fafafa;
+}
+
+.x-form p {
+  color: #fafafa;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+
+.x-checkbox input {
+  margin-right: 10px;
+}
+
+.x-answers input {
+  margin-right: 10px;
+ }
+ 
+
+.text-input {
+  background: transparent;
+  color: #fafafa;
+  width: 100%;
+  height: 25px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+}
+
+.text-input:hover {
+  border-color: #98c004;
+}
+
+#x-text {
+  overflow: auto;
+  width: 90%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+
+.x-button {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  height: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #98c004;
+  color: #fafafa;
+  width: 20em;
+  font-size: 75%;
+
+}
+
+.x-button:disabled {
+  backdrop-filter: sepia(90%);
+  opacity: 0.33;
+}
+
+/* .x-button:hover {
+  background-color: #fafafa;
+  color: #98c004;
+} */
+
+.x-select {
+  margin: 2px;
+  border-radius: 2px;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: orange;
+  color: #0c162c;
+  width: 5%;
+  font-size: 75%;
+
+}
+
+/*--------------------Quiz Process Relevant----------------------------*/
+
+#x-result {
+  font-size: medium;
+  display: none;
+  background-color: #0c162c;
+  color: #fafafa;
+  padding: 40px;
+} 

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/from.css"> 
+-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/timer.css">
+
+    <title>DEV-PP2</title>
+</head>
+
+<body>
+    <div class="grid-wrap">
+        <header>
+            <h1 id="logo">Project Portfolio II</h1>
+        </header>
+
+        <!-- << Social -------------------------------------------------------------->
+
+        <ul class="social">
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopenner"
+                    aria-label="Visit our Facebook page (opens in new tab)">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopenner"
+                    aria-label="Visit our twitter page (opens in new tab)">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopenner"
+                    aria-label="Visit our youtube page (opens in new tab)">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopenner"
+                    aria-label="Visit our instagram page (opens in new tab)">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="quiz"> quiz area to set a backgroound photo
+            <a href="quiz.html">file upload test</a>
+
+            <form id="xQuiz" class="x-form" method="POST" action="https://formdump.codeinstitute.net/">
+
+                <h2>Title Of the generated test <i class="fa-brands fa-think-peaks"></i></h2>
+                <p id="info1"></p>
+
+                <!-- << QUESTION LOAD-------------------------------------------------------------->
+
+
+                <div class="x-checkbox">
+
+
+                    <label id="qID"></label><br>
+                    <label id="qText"></label><br><br>
+
+                    <input type="checkbox" id="checkbox1" name="pro-event" value="checkbox1" class="x-answers">
+                    <input type="checkbox" id="option1" name="pro-event" value="option1">
+                    <label id="A" for="option1"></label><br>
+
+                    <input type="checkbox" id="checkbox2" name="pro-event" value="checkbox2" class="x-answers">
+                    <input type="checkbox" id="option2" name="pro-event" value="option2">
+                    <label id="B" for="option2"></label><br>
+
+                    <input type="checkbox" id="checkbox3" name="pro-event" value="checkbox3" class="x-answers">
+                    <input type="checkbox" id="option3" name="pro-event" value="option3">
+                    <label id="C" for="option3"></label><br>
+
+                    <input type="checkbox" id="checkbox4" name="pro-event" value="checkbox4" class="x-answers">
+                    <input type="checkbox" id="option4" name="pro-event" value="option4">
+                    <label id="D" for="option4"></label>
+                    <br>
+                    <!-- << TEST RUN-------------------------------------------------------------->
+
+                </div>
+                <div>
+                    <input type="button" class="x-button" id="x1-button" Value="Load The Test">
+                    <input type="button" class="x-button" id="x2-button" value="Submit My Answer" disabled>
+                    <input type="button" class="x-button" id="x3-button" value="Show Answers" disabled>
+                    <input type="button" class="x-button" id="x4-button" value="Show My Test Results" disabled>
+
+                </div>
+            </form>
+
+            <!-- << RECORD ANSWERS-------------------------------------------------------------->
+
+
+            <div id="x-result">
+                <h4>Test Summary: </h4>
+                <p>Time:</p>
+                <p id="ST"></p>
+                <p>Correct:</p>
+                <p id="SP"></p>
+                <p>Incorrect:</p>
+                <p id="SM"></p>
+
+
+                <h4>Your Answers: </h4>
+                <p id="x-record"></p>
+
+            </div>
+        </div>
+
+        <!-- >> SETUPS-------------------------------------------------------------->
+
+        <div class="setup">
+            <div id="test-type">
+                <input type="radio" name="x-radio" id="x1-radio" checked>
+                <label for="x1-radio">Test Mode</label>
+                <input type="radio" name="x-radio" id="x2-radio">
+                <label for="x2-radio">Learn Mode</label>
+            </div>
+
+        </div>
+
+        <!-- >> TIMER-------------------------------------------------------------->
+
+
+
+
+
+        <div id="app"></div>
+
+
+
+
+
+        <!-- >> SCORE-------------------------------------------------------------->
+
+
+        <div class="score">
+            <p class="scores">Correct Answers <span id="scorePlus">0</span></p>
+            <p class="scores">Incorrect Answers <span id="scoreMinus">0</span></p>
+            <div>
+                <br>
+                <a href="result.html" class="active" target="_blank">SHOW RESULT</a>
+                <br>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer>
+        <div>
+            <p>© 2023</p>
+        </div>
+    </footer>
+    </div>
+
+    <!--Script of FONTAESOME for the used icons-->
+    <script src="https://kit.fontawesome.com/f24292f78f.js" crossorigin="anonymous"></script>
+
+    <!-- <script src="assets/js/scripts.js"></script> -->
+    <!-- <script src="assets/js/quiz.js"></script> -->
+    <script src="assets/js/timer.js"></script>
+    <script src="assets/js/xtemp.js"></script>
+
+    <script src="assets/js/xquiz.js"></script>
+
+</body>
+
+</html>
