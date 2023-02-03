@@ -94,15 +94,15 @@ header {
 .timer {
   grid-area: timer;
   background-color: bisque;
-
 }
 
 .record {
   grid-area: record;
   background-color: gray;
-
+  font-size: 200%;
+  color: #0c162c;
+  text-align: center;
 }
-
 
 
 .score {
@@ -112,10 +112,11 @@ header {
 
 
 
+
 /*---------------------------Footer------------==================-----*/
 
 footer {
-  grid-area: footer;
+  text-align: center;
   background-color: green;
   font-size: small;
 
@@ -146,6 +147,11 @@ footer {
 
 /* >> form.css---------------------------------------------------------*/
 
+#xtest{
+  margin-top: 60px;
+  background-color: orangered;
+}
+
 .x-form {
 
   color: #fff;
@@ -163,12 +169,12 @@ footer {
 }
 
 .x-answers {
- 
-   backdrop-filter: sepia(90%);
-   opacity: 0.01;
- 
- }
- 
+
+  backdrop-filter: sepia(90%);
+  opacity: 0.01;
+
+}
+
 
 #test-type,
 #test-type label {
@@ -196,8 +202,8 @@ footer {
 
 .x-answers input {
   margin-right: 10px;
- }
- 
+}
+
 
 .text-input {
   background: transparent;
@@ -263,6 +269,8 @@ footer {
 
 }
 
+
+
 /*--------------------Quiz Process Relevant----------------------------*/
 
 #x-result {
@@ -271,4 +279,4 @@ footer {
   background-color: #0c162c;
   color: #fafafa;
   padding: 40px;
-} 
+}

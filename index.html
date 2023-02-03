@@ -51,7 +51,7 @@
             </li>
         </ul>
 
-        <div class="quiz"> 
+        <div class="quiz">
 
             <form id="xQuiz" class="x-form" method="POST" action="https://formdump.codeinstitute.net/">
 
@@ -93,6 +93,12 @@
                     <input type="button" class="x-button" id="x4-button" value="Show My Test Results" disabled>
 
                 </div>
+                <div class="temp-test">
+                    <input type="button" class="x-button" id="xtest" Value="Temp for Function test">
+                    <div>
+                        <p id="demo1"></p>
+                    </div>
+                </div>
             </form>
 
             <!-- << RECORD ANSWERS-------------------------------------------------------------->
@@ -106,8 +112,6 @@
                 <p id="SP"></p>
                 <p>Incorrect:</p>
                 <p id="SM"></p>
-
-
                 <h4>Your Answers: </h4>
                 <p id="x-record"></p>
 
@@ -129,32 +133,11 @@
         <!-- >> TIMER-------------------------------------------------------------->
 
 
-
-
-
-        <div class="timer" id="app"></div>
-
-
         <div class="record">
-            <table id="countdown">
-                <tr id="countdown-timer">
-                    <td><span id="days">x</span></td>
-                    <td><span id="hours">x</span></td>
-                    <td><span id="minutes">x</span></td>
-                    <td><span id="seconds">x</span></td>
-                </tr>
-                <tr id="countdown-labels">
-                    <td><span>Days</span></td>
-                    <td><span>Hours</span></td>
-                    <td><span>Minutes</span></td>
-                    <td><span>Seconds</span></td>
-                </tr>
-            </table>
+                <span Class="time-value" id="minutes">XX</span>
+                <span>:</span>
+                <span Class="time-value" id="seconds">XX</span>           
         </div>
-
-
-
-
 
         <!-- >> SCORE-------------------------------------------------------------->
 
@@ -174,7 +157,7 @@
 
     <footer>
         <div>
-            <p>© 2023</p>
+            <p>@2023</p>
         </div>
     </footer>
     </div>

@@ -46,9 +46,8 @@ document.getElementById("app").innerHTML = `
       ></path>
     </g>
   </svg>
-  <span id="base-timer-label" class="base-timer__label">${formatTime(
-  timeLeft
-)}</span>
+  <span id="base-timer-label" class="base-timer__label">${formatTime(timeLeft)}</span>
+
 </div>
 `;
 
