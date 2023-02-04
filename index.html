@@ -6,12 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/from.css"> 
--->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/timer.css">
 
     <title>DEV-PP2</title>
 </head>
@@ -19,7 +14,7 @@
 <body>
     <div class="grid-wrap">
         <header>
-            <h1 id="logo">Project Portfolio II</h1>
+            <h1 id="logo">Test Generator </h1>
         </header>
 
         <!-- << Social -------------------------------------------------------------->
@@ -57,15 +52,22 @@
 
                 <h2>Title Of the generated test <i class="fa-brands fa-think-peaks"></i></h2>
                 <p id="info1"></p>
+                <br>
 
                 <!-- << QUESTION LOAD-------------------------------------------------------------->
 
 
                 <div class="x-checkbox">
 
-
-                    <label id="qID"></label><br>
-                    <label id="qText"></label><br><br>
+                    
+                
+                    <label id="qID"></label>
+                    <br>
+                    <label id="qText"></label>
+                                       
+                    <div id="timeLine"></div>
+                    <div id="timeBar"></div> 
+                    <br>
 
                     <input type="checkbox" id="checkbox1" name="pro-event" value="checkbox1" class="x-answers">
                     <input type="checkbox" id="option1" name="pro-event" value="option1">
@@ -94,7 +96,8 @@
 
                 </div>
                 <div class="temp-test">
-                    <input type="button" class="x-button" id="xtest" Value="Temp for Function test">
+                    <input type="button" class="x-button" id="xtest" Value="Function X test">
+                    <input type="button" class="x-button" id="ztest" Value="Function Z test">
                     <div>
                         <p id="demo1"></p>
                     </div>
@@ -132,12 +135,21 @@
 
         <!-- >> TIMER-------------------------------------------------------------->
 
+        <div class="timer">
+            <span id="app"></span>
+            <span id="app2"></span>
 
-        <div class="record">
-                <span Class="time-value" id="minutes">XX</span>
-                <span>:</span>
-                <span Class="time-value" id="seconds">XX</span>           
         </div>
+        <div class="record">
+            <span Class="time-value" id="hours">XX</span>
+            <span>:</span>
+            <span Class="time-value" id="minutes">XX</span>
+            <span>:</span>
+            <span Class="time-value" id="seconds">XX</span>
+            <br>
+            
+        </div>
+        
 
         <!-- >> SCORE-------------------------------------------------------------->
 

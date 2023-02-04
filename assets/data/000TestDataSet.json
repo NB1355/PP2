@@ -4,7 +4,7 @@
 
         [{
                 "qRefID": "q001",
-                "qRefText": "Question ID: q001 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q001",
                 "checkbox1": "1q001 answer no.1 for question q001",
                 "checkbox2": "2q001 answer no.2 for question q001",
                 "checkbox3": "3q001 answer no.3 for question q001, correct",
@@ -13,7 +13,7 @@
             },
             {
                 "qRefID": "q002",
-                "qRefText": "Question ID: q002 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q002",
                 "checkbox1": "1q002 answer no.1 for question q002, correct",
                 "checkbox2": "2q002 answer no.2 for question q002",
                 "checkbox3": "3q002 answer no.3 for question q002",
@@ -21,7 +21,7 @@
                 "corrects": "14"
             }, {
                 "qRefID": "q003",
-                "qRefText": "Question ID: q003 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q003",
                 "checkbox1": "1q003 answer no.1 for question q003",
                 "checkbox2": "2q003 answer no.2 for question q003, correct",
                 "checkbox3": "3q003 answer no.3 for question q003",
@@ -29,7 +29,7 @@
                 "corrects": "2"
             }, {
                 "qRefID": "q004",
-                "qRefText": "Question ID: q004 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q004",
                 "checkbox1": "1q001 answer no.1 for question q004, correct",
                 "checkbox2": "2q001 answer no.2 for question q004, correct",
                 "checkbox3": "3q001 answer no.3 for question q004, correct",
@@ -38,7 +38,7 @@
             },
             {
                 "qRefID": "q005",
-                "qRefText": "Question ID: q005 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q005",
                 "checkbox1": "1q005 answer no.1 for question q005",
                 "checkbox2": "2q005 answer no.2 for question q005, correct",
                 "checkbox3": "3q005 answer no.3 for question q005",
@@ -47,7 +47,7 @@
             },
             {
                 "qRefID": "q006",
-                "qRefText": "Question ID: q006 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q006",
                 "checkbox1": "1q006 answer no.1 for question q006, correct",
                 "checkbox2": "2q006 answer no.2 for question q006",
                 "checkbox3": "3q006 answer no.3 for question q006",
@@ -56,7 +56,7 @@
             },
             {
                 "qRefID": "q007",
-                "qRefText": "Question ID: q007 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q007",
                 "checkbox1": "1q007 answer no.1 for question q007, correct",
                 "checkbox2": "2q007 answer no.2 for question q007, correct",
                 "checkbox3": "3q007 answer no.3 for question q007, correct",
@@ -65,7 +65,7 @@
             },
             {
                 "qRefID": "q008",
-                "qRefText": "Question ID: q008 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q008",
                 "checkbox1": "1q008 answer no.1 for question q008, correct",
                 "checkbox2": "2q008 answer no.2 for question q008, correct",
                 "checkbox3": "3q008 answer no.3 for question q008",
@@ -74,7 +74,7 @@
             },
             {
                 "qRefID": "q009",
-                "qRefText": "Question ID: q009 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q009",
                 "checkbox1": "1q009 answer no.1 for question q009",
                 "checkbox2": "2q009 answer no.2 for question q009, correct",
                 "checkbox3": "3q009 answer no.3 for question q009, correct",
@@ -83,7 +83,7 @@
             },
             {
                 "qRefID": "q010",
-                "qRefText": "Question ID: q010 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q010",
                 "checkbox1": "1q010 answer no.1 for question q010, correct",
                 "checkbox2": "2q010 answer no.2 for question q010",
                 "checkbox3": "3q010 answer no.3 for question q010",
@@ -92,7 +92,7 @@
             },
             {
                 "qRefID": "q011",
-                "qRefText": "Question ID: q011 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q011",
                 "checkbox1": "1q011 answer no.1 for question q011",
                 "checkbox2": "2q011 answer no.2 for question q011, correct",
                 "checkbox3": "3q011 answer no.3 for question q011",
@@ -101,7 +101,7 @@
             },
             {
                 "qRefID": "q012",
-                "qRefText": "Question ID: q012 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q012",
                 "checkbox1": "1q012 answer no.1 for question q012, correct",
                 "checkbox2": "2q012 answer no.2 for question q012",
                 "checkbox3": "3q012 answer no.3 for question q012",
@@ -110,7 +110,7 @@
             },
             {
                 "qRefID": "q013",
-                "qRefText": "Question ID: q013 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q013",
                 "checkbox1": "1q013 answer no.1 for question q013",
                 "checkbox2": "2q013 answer no.2 for question q013",
                 "checkbox3": "3q013 answer no.3 for question q013, correct",
@@ -119,7 +119,7 @@
             },
             {
                 "qRefID": "q014",
-                "qRefText": "Question ID: q014 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q014",
                 "checkbox1": "1q014 answer no.1 for question q014, correct",
                 "checkbox2": "2q014 answer no.2 for question q014, correct",
                 "checkbox3": "3q014 answer no.3 for question q014",
@@ -128,7 +128,7 @@
             },
             {
                 "qRefID": "q015",
-                "qRefText": "Question ID: q015 - sample question for testing",
+                "qRefText": "Sample question for testing; ID=q015",
                 "checkbox1": "1q015 answer no.1 for question q015, correct",
                 "checkbox2": "2q015 answer no.2 for question q015, correct",
                 "checkbox3": "3q015 answer no.3 for question q015, correct",
