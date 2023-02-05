@@ -10,12 +10,12 @@
 }
 
 body {
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   color: #0c162c;
 }
 
 h1 {
-  /* font-family: Oswald, sans-serif; */
+  font-family: Oswald, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #0c162c;
