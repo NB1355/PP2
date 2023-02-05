@@ -7,6 +7,13 @@ let s = 0;
 
 let testMode;
 
+// function getTestSettings(){
+
+//     let testMode = document.getElementById('mode').checked;
+//     let answerTimeLimit = document.getElementById('x1-radio');
+//     let queryCount = 7
+
+//   }
 
 
 document.getElementById("x1-button").addEventListener("click", runTest);
@@ -35,9 +42,12 @@ function runTest() {
 
 function getMode() {
 
-    testMode = document.getElementById("x1-radio").checked;
+    testMode = document.getElementById("test-mode").checked;
     
 }
+
+
+
 
 function questionsLoad() {
     fetch("assets/data/000TestDataSet.json")
@@ -48,8 +58,14 @@ function questionsLoad() {
 
             randomSelect(data);
             list = data; //Creates Global Variable OPT: use local possible?
+            
+            
+            
             getMode();
 
+            
+            
+            
             questionShow();
             
 

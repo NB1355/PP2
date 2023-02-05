@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>DEV-PP2</title>
+    <title>PP2 Development</title>
 </head>
 
 <body>
@@ -59,14 +59,14 @@
 
                 <div class="x-checkbox">
 
-                    
-                
+
+
                     <label id="qID"></label>
                     <br>
                     <label id="qText"></label>
-                                       
+
                     <div id="timeLine"></div>
-                    <div id="timeBar"></div> 
+                    <div id="timeBar"></div>
                     <br>
 
                     <input type="checkbox" id="checkbox1" name="pro-event" value="checkbox1" class="x-answers">
@@ -96,10 +96,15 @@
 
                 </div>
                 <div class="temp-test">
-                    <input type="button" class="x-button" id="xtest" Value="Function X test">
-                    <input type="button" class="x-button" id="ztest" Value="Function Z test">
+                    <input type="button" class="x-button" id="x-test" Value="Function X test">
+                    <input type="button" class="x-button" id="z-test" Value="Function Z test">
                     <div>
                         <p id="demo1"></p>
+                        <p id="demo2"></p>
+                        <p id="demo3"></p>
+                        <p id="demo4"></p>
+                        <p id="demo5"></p>
+                        <p id="demo6"></p>
                     </div>
                 </div>
             </form>
@@ -123,12 +128,28 @@
 
         <!-- >> SETUPS-------------------------------------------------------------->
 
-        <div class="setup">
+        <div class='setup'>
             <div id="test-type">
-                <input type="radio" name="x-radio" id="x1-radio" checked>
-                <label for="x1-radio">Test Mode</label>
-                <input type="radio" name="x-radio" id="x2-radio">
-                <label for="x2-radio">Learn Mode</label>
+
+                <input type="radio" name="test_mode" id="test-mode" value="Test" checked>
+                <label for="test-mode">Test Mode</label>
+
+                <input type="radio" name="test_mode" id="learn-mode" value="Learn">
+                <label for="learn-mode">Learn Mode</label>
+
+                <label for="query-count">Number of questions to be loaded:</label>
+                <input type="text" id="query-count" value="5">
+
+
+
+
+
+
+
+
+
+
+
             </div>
 
         </div>
@@ -136,8 +157,8 @@
         <!-- >> TIMER-------------------------------------------------------------->
 
         <div class="timer">
-            <span id="app"></span>
-            <span id="app2"></span>
+            <br> <span id="app1"></span>
+            <br> <span id="app2"></span>
 
         </div>
         <div class="record">
@@ -147,9 +168,9 @@
             <span>:</span>
             <span Class="time-value" id="seconds">XX</span>
             <br>
-            
+
         </div>
-        
+
 
         <!-- >> SCORE-------------------------------------------------------------->
 
@@ -182,7 +203,9 @@
 
     <script src="assets/js/quiz.js"></script>
     <script src="assets/js/timer.js"></script>
-    <script src="assets/js/xtimer.js"></script>
+
+    <script src="assets/js/_tests.js"></script>
+
 
 
 

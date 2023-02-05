@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-family: Oswald, sans-serif;
+  /* font-family: Oswald, sans-serif; */
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #0c162c;
@@ -171,7 +171,7 @@ footer {
   padding: 30px;
 }
 
-.x-radio {
+.test-mode {
   display: none;
 }
 
@@ -192,7 +192,6 @@ footer {
 #test-type label {
   display: inline-block;
   padding-bottom: 20px;
-  font-size: small;
   margin-right: 10px;
 
 }
