@@ -24,6 +24,7 @@
 * using GRID Layout to maintain responsivity
 
 ### Fixes
+* in Chrom => Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
 * 404 page not working
 * adjust contact form margins/padding relative to the grid structure
 

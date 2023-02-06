@@ -16,41 +16,30 @@ let testMode;
 //   }
 
 
-document.getElementById("x1-button").addEventListener("click", runTest);
-document.getElementById("x2-button").addEventListener("click", questionSubmit);
-document.getElementById("x3-button").addEventListener("click", showAnswers);
-document.getElementById("x4-button").addEventListener("click", showResult);
+document.getElementById("load-question").addEventListener("click", runTest);
+document.getElementById("submit-question").addEventListener("click", questionSubmit);
+document.getElementById("show-corrects").addEventListener("click", showAnswers);
+document.getElementById("show-result").addEventListener("click", showResult);
 
 
 function runTest() {
 
-    let testStatus = 1;
-
-
-    document.querySelector(".x-checkbox").style.display = "block";
-
+    document.querySelector(".question-sheet").style.display = "block";
     questionsLoad();
-    // document.querySelector(".x-answers").style.display ="none";
-
-    //     while (testStatus =1){
-    //         questionShow();
-    //     } 
-    // }
-
 }
 
 
 function getMode() {
 
     testMode = document.getElementById("test-mode").checked;
-    
 }
 
 
 
 
 function questionsLoad() {
-    fetch("assets/data/000TestDataSet.json")
+
+    fetch("assets/data/000TestDataSet.json") // link later to select and upload process -----------#check
         .then(response => {
             return response.json();
         })
@@ -58,31 +47,22 @@ function questionsLoad() {
 
             randomSelect(data);
             list = data; //Creates Global Variable OPT: use local possible?
-            
-            
-            
+
             getMode();
-
-            
-            
-            
             questionShow();
-            
 
-            console.log(" test mode:" + testMode) + "/n";
             if (testMode == true) {
-                document.getElementById("x1-button").disabled = true;
-                document.getElementById("x2-button").disabled = false;
-                document.getElementById("x3-button").disabled = true;
+                document.getElementById("load-question").disabled = true;
+                document.getElementById("submit-question").disabled = false;
+                document.getElementById("show-corrects").disabled = true;
                 startTimer();
 
             } else {
-                document.getElementById("x1-button").disabled = true;
-                document.getElementById("x2-button").disabled = false;
-                document.getElementById("x3-button").disabled = false;
+                document.getElementById("load-question").disabled = true;
+                document.getElementById("submit-question").disabled = false;
+                document.getElementById("show-corrects").disabled = false;
 
             }
-
         });
 
 }
@@ -120,15 +100,15 @@ function questionShow() {
         optionesTrue(q);
 
     } else {
-        document.getElementById("x2-button").disabled = true;
-        document.getElementById("x3-button").disabled = true;
-        document.getElementById("x4-button").disabled = false;
+        document.getElementById("submit-question").disabled = true;
+        document.getElementById("show-corrects").disabled = true;
+        document.getElementById("show-result").disabled = false;
 
     }
 
-    if (    testMode == true) {
+    if (testMode == true) {
 
-        startTimer(); 
+        startTimer();
 
     }
 }
@@ -148,16 +128,16 @@ function optionesTrue(q) {
         let correct = xCorrects.charAt(i);
         switch (correct) {
             case "1":
-                document.getElementById("checkbox1").checked = true;
+                document.getElementById("load-question").checked = true;
                 break;
             case "2":
-                document.getElementById("checkbox2").checked = true;
+                document.getElementById("submit-question").checked = true;
                 break;
             case "3":
-                document.getElementById("checkbox3").checked = true;
+                document.getElementById("show-corrects").checked = true;
                 break;
             case "4":
-                document.getElementById("checkbox4").checked = true;
+                document.getElementById("show-result").checked = true;
                 break;
         }
     }
@@ -166,20 +146,20 @@ function optionesTrue(q) {
 
 function showAnswers() {
 
-    let xShow = document.getElementById("x3-button").value;
+    let xShow = document.getElementById("show-corrects").value;
 
     if (xShow == "Show Answers") {
         opacity = 0.5;
-        document.getElementById("x3-button").value = "Hide Answers";
+        document.getElementById("show-corrects").value = "Hide Answers";
     } else {
         opacity = 0.01;
-        document.getElementById("x3-button").value = "Show Answers";
+        document.getElementById("show-corrects").value = "Show Answers";
     }
 
-    document.getElementById("checkbox1").style.opacity = opacity;
-    document.getElementById("checkbox2").style.opacity = opacity;
-    document.getElementById("checkbox3").style.opacity = opacity;
-    document.getElementById("checkbox4").style.opacity = opacity;
+    document.getElementById("load-question").style.opacity = opacity;
+    document.getElementById("submit-question").style.opacity = opacity;
+    document.getElementById("show-corrects").style.opacity = opacity;
+    document.getElementById("show-result").style.opacity = opacity;
     // document.querySelector(".x-answers").style.opacity = "0.5";  TEMP ? not working
 
 
@@ -192,8 +172,8 @@ function questionSubmit() {
 
     optionsClear();
     questionShow();
-   
-    timePassed = -1 ;
+
+    timePassed = -1;
     clearInterval(timerInterval);
 }
 
@@ -237,6 +217,7 @@ function scorePlus() {
 }
 
 function scoreMinus() {
+
     let oldScore = parseInt(document.getElementById("scoreMinus").innerText);
     document.getElementById("scoreMinus").innerText = ++oldScore;
 }
@@ -245,14 +226,12 @@ function scoreMinus() {
 
 
 function optionsClear() {
+    // TBD comennted out => why not working ? =================================================#Check
+    // document.querySelectorAll("#my-test input").checked = false;
+    // document.getElementsByName("pro-event").checked = false;
 
-    document.getElementById("checkbox1").checked = false;
-    document.getElementById("checkbox2").checked = false;
-    document.getElementById("checkbox3").checked = false;
-    document.getElementById("checkbox4").checked = false;
-
-    document.getElementById("option1").checked = false;
-    document.getElementById("option2").checked = false;
-    document.getElementById("option3").checked = false;
-    document.getElementById("option4").checked = false;
+    let checkboxes = document.getElementsByName("options");
+    for (var checkbox of checkboxes) {
+        checkbox.checked = false;
+    }
 }

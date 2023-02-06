@@ -161,6 +161,7 @@ footer {
 
 .temp-test {
   margin-top: 60px;
+  padding: auto;
   background-color: orangered;
 }
 
@@ -175,12 +176,12 @@ footer {
   display: none;
 }
 
-.x-checkbox {
+.question-sheet  {
   accent-color: #98c004;
   display: none;
 }
 
-.x-answers {
+.correct-answers {
 
   backdrop-filter: sepia(90%);
   opacity: 0.01;

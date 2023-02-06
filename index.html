@@ -46,7 +46,7 @@
             </li>
         </ul>
 
-        <div class="quiz">
+        <div >
 
             <form id="xQuiz" class="x-form" method="POST" action="https://formdump.codeinstitute.net/">
 
@@ -55,11 +55,7 @@
                 <br>
 
                 <!-- << QUESTION LOAD-------------------------------------------------------------->
-
-
-                <div class="x-checkbox">
-
-
+                <div class="question-sheet" id="my-test">
 
                     <label id="qID"></label>
                     <br>
@@ -69,33 +65,35 @@
                     <div id="timeBar"></div>
                     <br>
 
-                    <input type="checkbox" id="checkbox1" name="pro-event" value="checkbox1" class="x-answers">
-                    <input type="checkbox" id="option1" name="pro-event" value="option1">
+                    <input type="checkbox" name="answer" id="checkbox1" class="correct-answers">
+                    <input type="checkbox" name="option" id="option1">
                     <label id="A" for="option1"></label><br>
 
-                    <input type="checkbox" id="checkbox2" name="pro-event" value="checkbox2" class="x-answers">
-                    <input type="checkbox" id="option2" name="pro-event" value="option2">
+                    <input type="checkbox" name="answer" id="checkbox2" class="correct-answers">
+                    <input type="checkbox" name="option" id="option2">
                     <label id="B" for="option2"></label><br>
 
-                    <input type="checkbox" id="checkbox3" name="pro-event" value="checkbox3" class="x-answers">
-                    <input type="checkbox" id="option3" name="pro-event" value="option3">
+                    <input type="checkbox" name="answer" id="checkbox3" class="correct-answers">
+                    <input type="checkbox" name="option" id="option3">
                     <label id="C" for="option3"></label><br>
 
-                    <input type="checkbox" id="checkbox4" name="pro-event" value="checkbox4" class="x-answers">
-                    <input type="checkbox" id="option4" name="pro-event" value="option4">
+                    <input type="checkbox" name="answer" id="checkbox4" class="correct-answers">
+                    <input type="checkbox" name="option" id="option4">
                     <label id="D" for="option4"></label>
                     <br>
-                    <!-- << TEST RUN-------------------------------------------------------------->
-
                 </div>
+
+                <!-- << Process Commands -------------------------------------------------------------->
                 <div>
-                    <input type="button" class="x-button" id="x1-button" Value="Load The Test">
-                    <input type="button" class="x-button" id="x2-button" value="Submit My Answer" disabled>
-                    <input type="button" class="x-button" id="x3-button" value="Show Answers" disabled>
-                    <input type="button" class="x-button" id="x4-button" value="Show My Test Results" disabled>
-
+                    <input type="button" class="x-button" id="load-question" Value="Load The Test">
+                    <input type="button" class="x-button" id="submit-question" value="Submit My Answer" disabled>
+                    <input type="button" class="x-button" id="show-corrects" value="Show Answers" disabled>
+                    <input type="button" class="x-button" id="show-result" value="Show My Test Results" disabled>
                 </div>
+
+                <!-- << Temp Area for DEV tests ---------------------------------------------------->
                 <div class="temp-test">
+                    <p>Temporary DevTest Area [will be deleted ]</p>
                     <input type="button" class="x-button" id="x-test" Value="Function X test">
                     <input type="button" class="x-button" id="z-test" Value="Function Z test">
                     <div>
@@ -143,15 +141,7 @@
 
 
 
-
-
-
-
-
-
-
             </div>
-
         </div>
 
         <!-- >> TIMER-------------------------------------------------------------->
@@ -201,7 +191,7 @@
 
 
 
-    <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/questionnaire.js"></script>
     <script src="assets/js/timer.js"></script>
 
     <script src="assets/js/xtests.js"></script>
